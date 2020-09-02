@@ -46,6 +46,8 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import croquetIconURL from './croquet/croquet.png';
+
 export default [
     {
         name: (
@@ -317,5 +319,23 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    },
+    {
+        name: 'Croquet',
+        extensionId: 'croquet',
+        collaborator: 'Croquet Corporation',
+        iconURL: croquetIconURL,
+        insetIconURL: croquetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Croquet Collaboration Library."
+                description="User Croquet to create collaborative features"
+                id="gui.extension.croquet.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        useAutoScan: false,
     }
 ];
